@@ -64,3 +64,7 @@ example of an unsccessful request:
 
 
 `./url_shortener prune` or `cargo run prune`
+
+## Docker Image
+
+`docker pull jibaomansaray/url-shortener`
