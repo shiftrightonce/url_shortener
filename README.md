@@ -24,10 +24,13 @@ Run: `cargo build -r`
 
 ## Using the REST API
 
-- generate a new short url:
+- endpoint: `/api/v1/generate`
 
-  method: post
-  paylaod: 
+  description: generate a new short url:
+
+  method: `POST`
+
+  paylaod:
 
 ```json
   {
