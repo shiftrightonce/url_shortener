@@ -3,6 +3,7 @@ use sha2::{Digest, Sha256};
 use ulid::Ulid;
 
 pub(crate) mod api;
+pub(crate) mod app_setting;
 pub(crate) mod url;
 
 pub(crate) fn sha256_hash(data: &str) -> String {

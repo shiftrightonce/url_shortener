@@ -17,6 +17,13 @@ CREATE TABLE IF NOT EXISTS  "url"  (
 	"raw"	TEXT NOT NULL,
 	PRIMARY KEY("internal_id" AUTOINCREMENT)
 );
+
+	CREATE TABLE IF NOT EXISTS "app_setting" (
+	"internal_id"	INTEGER,
+	"name" TEXT UNIQUE NOT NULL,
+	"value" TEXT,
+	PRIMARY KEY("internal_id" AUTOINCREMENT)
+	);
   "#;
 
     if let Err(e) = sqlx::query(sql).execute(db).await {
